@@ -43,21 +43,21 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="service-details.html">Company Law Service</a></li>
-              <li><a href="service-details.html">FEMA</a></li>
-              <li><a href="service-details.html">SEBI and Securities Laws</a></li>
-              <li><a href="service-details.html">Limited Liability Partnership</a></li>
-              <li><a href="service-details.html">Legal Services</a></li>
-              <li><a href="service-details.html">Other Matters</a></li>
+              <li><a href="./services/company-law.html">Company Law Service</a></li>
+              <li><a href="./services/fema.html">FEMA</a></li>
+              <li><a href="./services/sebi.html">SEBI and Securities Laws</a></li>
+              <li><a href="./services/llp.html">Limited Liability Partnership</a></li>
+              <li><a href="./services/legal.html">Legal Services</a></li>
+              <li><a href="./services/other-matters.html">Other Matters</a></li>
             </ul>
           </li>
           <li><a href="#">Company Act 2013</a></li>
           <li><a href="whatsnew.html">What's New</a></li>
-          <li><a href="careers.html">Careers</a></li>
+          <li><a href="careers.html" class="active">Careers</a></li>
           <li><a class="get-a-quote" href="contact.html">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -96,48 +96,72 @@
 
         <div class="row g-0">
 
-          <div class="col-lg-5 quote-bg" style="background-image: url(assets/img/quote-bg.jpg);"></div>
+          <div class="col-lg-5 quote-bg" style="background-image: url(assets/img/careers.jpg);"></div>
 
           <div class="col-lg-7">
             <form action="forms/quote.php" method="post" class="php-email-form">
-              <h3>Careers</h3>
-              <p>Vel nobis odio laboriosam et hic voluptatem. Inventore vitae totam. Rerum repellendus enim linead sero park flows.</p>
+              <h3>Apply Here</h3>
+              <p>
+                We nurture and cultivate a sense pride in the work and create team leaders. 
+                Your growth chart will be governed by well-defined transparent policies of the firm. 
+                Apply via the form given below and meet us for face to face interview.
+              </p>
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="departure" class="form-control" placeholder="City of Departure" required>
+                  <input type="text" name="firstName" class="form-control" placeholder="First Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="lastName" class="form-control" placeholder="Last Name" required>
                 </div>
 
                 <div class="col-md-6">
-                  <input type="text" name="delivery" class="form-control" placeholder="Delivery City" required>
-                </div>
-
-                <div class="col-md-6">
-                  <input type="text" name="weight" class="form-control" placeholder="Total Weight (kg)" required>
-                </div>
-
-                <div class="col-md-6">
-                  <input type="text" name="dimensions" class="form-control" placeholder="Dimensions (cm)" required>
-                </div>
-
-                <div class="col-lg-12">
-                  <h4>Your Personal Details</h4>
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" name="name" class="form-control" placeholder="Name" required>
-                </div>
-
-                <div class="col-md-12 ">
                   <input type="email" class="form-control" name="email" placeholder="Email" required>
                 </div>
+                <div class="col-md-6">
+                  <input type="number" class="form-control" name="phone" placeholder="Phone" required>
+                </div>
 
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                <div class="col-md-6">
+                  <input type="text" name="departure" class="form-control" placeholder="Gender" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="position" class="form-control" placeholder="Position you are applying for" required>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" name="dob" class="form-control" placeholder="Date Of Birth (DD/MM/YYYY)" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="qualification" class="form-control" placeholder="Highest Qualification" required>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" name="website" class="form-control" placeholder="Portfolio website" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="lastCompany" class="form-control" placeholder="Last company you worked for" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label text-bold"><small>Years Of Experience</small></label>
+                  <div class="row">
+                    <div class="col-6">
+                      <input type="number" name="expYears" class="form-control" placeholder="Years" required>
+                    </div>
+                    <div class="col-6">
+                      <input type="number" name="expMonths" class="form-control" placeholder="Months" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fs-bold"><small>Upload Resume *( Max size 1 mb )</small></label>
+                  <input type="file" name="resume" class="form-control" required>
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                  <label class="form-label text-bold"><small>Reference / Comments / Question<small></label>
+                  <textarea class="form-control" name="message" rows="6" placeholder="Reference / Comments / Question" required></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -145,7 +169,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
 
-                  <button type="submit">Get a quote</button>
+                  <button type="submit">Send Application</button>
                 </div>
 
               </div>
