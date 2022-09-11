@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPRS Admin</title>
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../assets/img/logo.png" height="60">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="careers.html">Careers</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <button class="btn btn-primary" id="loginOutButton">Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar Ends -->
+
+  <div class="container mt-5">
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Position</th>
+            <th scope="col">DOB</th>
+            <th scope="col">Qualification</th>
+            <th scope="col">Portfolio</th>
+            <th scope="col">Last Company</th>
+            <th scope="col">Experience</th>
+            <th scope="col">Resume</th>
+            <th scope="col">Comments</th>
+          </tr>
+        </thead>
+        <tbody id="careers-table">
+          <tr>
+            <td colspan="12" class="text-center">
+              <div class="spinner-grow text-primary my-5" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+</body>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./firebase/careers.js" type="module"></script>
+</html>

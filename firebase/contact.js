@@ -16,11 +16,10 @@ function submitContactForm(formData) {
   const id = date.getTime()
 
   set(ref(db, `SPRS/contact/${id}`), {
-    entryDateTime: date,
     name: formData.name,
     email: formData.email,
     subject: formData.subject,
     message: formData.message,
   }).then(successMessage)
-  .catch(failMessage);
+  .catch(err => failMessage(err));
 }

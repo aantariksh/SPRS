@@ -1,5 +1,4 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword  } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDwBp3AN9CB_ErkntIAVQ1Lkm-lWkCYvwg",
@@ -11,13 +10,12 @@ const firebaseConfig = {
   appId: "1:137229941775:web:e73f88adad9209abd6f77a"
 };
 initializeApp(firebaseConfig);
-signInWithEmailAndPassword(getAuth(), 'open@sprsllp.com', 'password')
 
-export function failMessage() {
+export function failMessage(err) {
   Swal.fire({
     icon: 'error',
     title: 'Oops...',
-    text: 'Something went wrong! Please try again later Or reach us via email/phone.',
+    text: err || 'Something went wrong! Please try again later Or reach us via email/phone.',
   }).then(
     () => location.reload()
   )
